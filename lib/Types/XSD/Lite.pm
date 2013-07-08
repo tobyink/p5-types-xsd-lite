@@ -664,6 +664,11 @@ Like C<totalDigits> but ignores digits before the decimal point.
 
 =back
 
+=head1 CAVEATS
+
+This distribution has virtually no test suite, in the hope that Types::XSD's
+test suite will shake out any bugs in this module.
+
 =head1 BUGS
 
 Please report any bugs to
