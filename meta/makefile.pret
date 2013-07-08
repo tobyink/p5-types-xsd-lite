@@ -1,0 +1,8 @@
+# This file provides instructions for packaging.
+
+`Types-XSD-Lite`
+	perl_version_from m`Types::XSD::Lite`;
+	version_from      m`Types::XSD::Lite`;
+	readme_from       m`Types::XSD::Lite` ;
+	.
+
