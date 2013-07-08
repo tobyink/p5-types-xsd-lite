@@ -337,7 +337,7 @@ sub facet
 	
 	no strict qw( refs );
 	no warnings qw( redefine prototype );
-	*{$self->name} = __PACKAGE__->_mksub($self);
+	*{$self->library . '::' . $self->name} = $self->library->_mksub($self);
 }
 
 declare AnyType, as Types::Standard::Any;
@@ -634,8 +634,8 @@ Strings of Perl code will result in faster-running type constraints.
 Restrict the length of a value. For example C<< Integer[length=>2] >> allows
 C<10>, C<99> and C<-1>, but not C<100>, C<9> or C<-10>.
 
-Types::XSD won't prevent you from making ridiculous constraints such as
-C<< String[ maxLength => 1, minLength => 2 ] >>.
+Types::XSD::Lite won't prevent you from making ridiculous constraints such
+as C<< String[ maxLength => 1, minLength => 2 ] >>.
 
 Note that on C<HexBinary> and C<Base64Binary> types, the lengths apply to
 the decoded string. Length restrictions are silently ignored for C<QName>
