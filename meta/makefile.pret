@@ -3,6 +3,9 @@
 `Types-XSD-Lite`
 	perl_version_from m`Types::XSD::Lite`;
 	version_from      m`Types::XSD::Lite`;
-	readme_from       m`Types::XSD::Lite` ;
+	readme_from       m`Types::XSD::Lite`;
+	requires          p`Type::Library 0.004`;
+	test_requires     p`Test::More 0.96`;
+	test_requires     p`Test::TypeTiny 0.004`;
 	.
 
