@@ -429,6 +429,18 @@ __END__
 
 =encoding utf-8
 
+=begin stopwords
+
+datatypes
+datetime-related
+QNames
+IDRefs
+whitespace
+datetime/duration-related
+
+
+=end stopwords
+
 =head1 NAME
 
 Types::XSD::Lite - type constraints based on a subset of XML schema datatypes
@@ -452,7 +464,7 @@ all of the XSD types, except datetime-related ones, and XML-specific ones
 
 =head2 Type Constraints
 
-I've added some quick explainations of what each type is, but for details,
+I've added some quick explanations of what each type is, but for details,
 see the XML Schema specification.
 
 =over
