@@ -451,22 +451,24 @@ Types::XSD::Lite - type constraints based on a subset of XML schema datatypes
    package Person;
    
    use Moo;
-   use Types::XSD qw( PositiveInteger String );
+   use Types::XSD::Lite qw( PositiveInteger String );
    
    has name => (is => "ro", isa => String[ minLength => 1 ]);
    has age  => (is => "ro", isa => PositiveInteger);
 
 =head1 DESCRIPTION
 
-These are all the type constraints from Types::XSD that could be implemented
-without introducing extra dependencies (above Type::Tiny). That's basically
-all of the XSD types, except datetime-related ones, and XML-specific ones
-(QNames, IDRefs, etc).
+These are all the type constraints from XML Schema that could be
+implemented without introducing extra runtime dependencies (above
+L<Type::Tiny>). That's basically all of the XSD types, except
+datetime-related ones, and XML-specific ones (QNames, IDRefs, etc).
+
+If you want the full set of XML Schema types, see L<Types::XSD>.
 
 =head2 Type Constraints
 
-I've added some quick explanations of what each type is, but for details,
-see the XML Schema specification.
+I've added some quick explanations of what each type is, but for
+details, see the XML Schema specification.
 
 =over
 
@@ -594,7 +596,7 @@ A C<NonNegativeInteger> between 0 and 255 (inclusive).
 Datatypes can be parameterized using the facets defined by XML Schema. For
 example:
 
-   use Types::XSD qw( String Decimal PositiveInteger Token );
+   use Types::XSD::Lite qw( String Decimal PositiveInteger Token );
    
    my @sizes = qw( XS S M L XL XXL );
    
