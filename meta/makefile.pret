@@ -7,5 +7,8 @@
 	requires          p`Type::Library 0.004`;
 	test_requires     p`Test::More 0.96`;
 	test_requires     p`Test::TypeTiny 0.004`;
+	test_requires     p`Test::Requires`;
+	test_requires     p`Test::Fatal`;
+	test_recommends   p`Moo`;
 	.
 

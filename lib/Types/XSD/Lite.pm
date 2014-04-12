@@ -298,9 +298,10 @@ sub facet
 	
 	my $inline_generator = sub
 	{
-		my %p = @_;
+		my %p_not_destroyed = @_;
 		return sub {
 			local $T = $_[0]->parent;
+			my %p    = %p_not_destroyed;  # copy;
 			my $var  = $_[1];
 			my $r    = sprintf(
 				'(%s)',
