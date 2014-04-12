@@ -18,3 +18,12 @@
 			dcs:thanks cpan:DJERIUS;
 		]
 	].
+
+`Types-XSD-Lite 0.005 cpan:TOBYINK`
+	issued  2014-04-12;
+	changeset [
+		item [
+			a dcs:Documentation;
+			label "s/Types::XSD/Types::XSD::Lite/ in a few places.";
+		];
+	].
