@@ -4,3 +4,17 @@
 	issued  2013-07-08;
 	label   "Initial release; split from Types-XSD-0.002".
 
+`Types-XSD-Lite 0.004 cpan:TOBYINK`
+	issued  2014-04-12;
+	changeset [
+		item [
+			a dcs:Packaging;
+			label "use Dist::Inkt";
+		];
+		item [
+			a dcs:Bugfix;
+			label "Fix bug where inline_check called multiple times on a parameterized type works the first time, but ignores all parameters on subsequent calls.";
+			dcs:fixes RT#94620;
+			dcs:thanks cpan:DJERIUS;
+		]
+	].
