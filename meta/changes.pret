@@ -27,3 +27,14 @@
 			label "s/Types::XSD/Types::XSD::Lite/ in a few places.";
 		];
 	].
+
+`Types-XSD-Lite 0.006 cpan:TOBYINK`
+	issued  2021-01-08;
+	changeset [
+		item [
+			a dcs:Bugfix;
+			label "Fix regexes when applied to multiline strings.";
+			dcs:fixes RT#134000;
+			dcs:thanks cpan:BRTASTIC;
+		];
+	].

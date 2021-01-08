@@ -6,6 +6,8 @@ cpan:TOBYINK
 	:name  "Toby Inkster";
 	:mbox  <mailto:tobyink@cpan.org>.
 
-
 cpan:DJERIUS
 	:name "Diab Jerius".
+
+cpan:BRTASTIC
+	:name "Bartosz Jarzyna".
