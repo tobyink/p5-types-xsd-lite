@@ -32,6 +32,10 @@
 	issued  2021-01-08;
 	changeset [
 		item [
+			a dcs:Packaging;
+			label "Add explicit dependency on Perl 5.8.3.";
+		];
+		item [
 			a dcs:Bugfix;
 			label "Fix regexes when applied to multiline strings.";
 			dcs:fixes RT#134000;

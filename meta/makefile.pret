@@ -3,6 +3,7 @@
 @prefix : <http://ontologi.es/doap-deps#> .
 
 `Types-XSD-Lite`
+	:runtime-requirement  [ :on "perl 5.008003"^^:CpanId ];
 	:runtime-requirement  [ :on "Type::Library 0.004"^^:CpanId ];
 	:test-requirement     [ :on "Test::More 0.96"^^:CpanId ];
 	:test-requirement     [ :on "Test::TypeTiny 0.004"^^:CpanId ];
