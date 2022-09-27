@@ -4,9 +4,9 @@
 
 `Types-XSD-Lite`
 	:runtime-requirement  [ :on "perl 5.008003"^^:CpanId ];
-	:runtime-requirement  [ :on "Type::Library 0.004"^^:CpanId ];
+	:runtime-requirement  [ :on "Type::Library 2.000000"^^:CpanId ];
 	:test-requirement     [ :on "Test::More 0.96"^^:CpanId ];
-	:test-requirement     [ :on "Test::TypeTiny 0.004"^^:CpanId ];
+	:test-requirement     [ :on "Test::TypeTiny 2.000000"^^:CpanId ];
 	:test-requirement     [ :on "Test::Requires"^^:CpanId ];
 	:test-requirement     [ :on "Test::Fatal"^^:CpanId ];
 	:test-recommendation  [ :on "Moo 1.003000"^^:CpanId ].
